@@ -5,15 +5,21 @@ resource "aws_instance" "name" {
     instance_type = "t2.micro"
     availability_zone = "us-east-1a"
     tags = {
-        Name = "dev"
+        Name = "shama"
     }
 
 }
 
 resource "aws_s3_bucket" "name" {
-    bucket = "shammuuuuu"
+    bucket = "shhhhhammmmmuuuuu"
   
 
+}
+resource "aws_vpc" "name" {
+    cidr_block = "10.0.1.0/16"
+  tags = {
+    Name ="vpc"
+  }
 }
 
 
